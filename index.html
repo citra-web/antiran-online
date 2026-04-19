@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Antrian Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎟️ Sistem Antrian Online</h1>
+    <p>Cek antrian tanpa harus nunggu lama</p>
+  </header>
+
+  <main class="container">
+
+    <!-- USER -->
+    <div class="card">
+      <h2>User</h2>
+      <button onclick="ambilAntrian()">Ambil Nomor</button>
+
+      <p>Nomor Kamu: <span id="nomor">-</span></p>
+      <p>Sedang Dipanggil: <span id="current">0</span></p>
+      <p>Estimasi: <span id="estimasi">0</span> menit</p>
+    </div>
+
+    <!-- ADMIN -->
+    <div class="card">
+      <h2>Admin</h2>
+      <button onclick="nextAntrian()">Panggil Berikutnya</button>
+
+      <p>Antrian Sekarang: <span id="adminCurrent">0</span></p>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
